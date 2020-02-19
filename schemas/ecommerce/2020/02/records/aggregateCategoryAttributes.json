@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "entity": {
+            "type": "string",
+            "enum": ["aggregateCategoryAttributes"]
+        },
+        "id": {
+            "type": "string",
+            "pattern": "^\\w+$"
+        },
+        "operation": {
+            "type": "string",
+            "enum": ["save", "delete"]
+        },
+        "attributes": {
+            "type": "object",
+            "patternProperties": {
+                "^.*$": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string",
+                            "pattern": "^\\w+$"
+                        }
+                    },
+                    "required": ["id"],
+                    "additionalProperties": false
+                }
+            }
+        }
+    },
+    "required": [
+        "entity", "id", "operation", "attributes"
+    ],
+    "additionalProperties": false
+}

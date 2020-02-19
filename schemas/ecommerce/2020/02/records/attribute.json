@@ -1,0 +1,66 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "entity": {
+            "type": "string",
+            "enum": ["attribute"]
+        },
+        "id": {
+            "type": "string",
+            "pattern": "^\\w+$"
+        },
+        "operation": {
+            "type": "string",
+            "enum": ["save", "delete"]
+        },
+        "locale": {
+            "type": "string",
+            "pattern": "^[a-z]{2}_[A-Z]{2}$"
+        },
+        "scope": {
+            "type": "string",
+            "pattern": "^\\w+$"
+        },
+        "data": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "pattern": "^\\w+$"
+                },
+                "type": {
+                    "type": "string",
+                    "enum": ["identifier", "text", "textarea", "boolean", "number", "simpleselect", "multiselect", "date", "metric", "price_collection", "image", "file"]
+                },
+                "options": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "string"
+                            },
+                            "sortOrder": {
+                                "type": "number"
+                            },
+                            "label": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "additionalProperties": false,
+                    "required": ["id", "sortOrder", "label"]
+                }
+            },
+            "required": [
+                "id", "type"
+            ],
+            "additionalProperties": false
+        }
+    },
+    "required": [
+        "entity", "id", "operation", "locale", "scope", "data"
+    ],
+    "additionalProperties": false
+}
