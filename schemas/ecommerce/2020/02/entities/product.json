@@ -62,7 +62,6 @@
         "parent",
         "family",
         "enabled",
-        "name",
         "categories",
         "attributes",
         "metadata"
