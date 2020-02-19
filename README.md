@@ -9,7 +9,7 @@
 
 ## Introduction
 
-This repository contains schemas for data validation. All schemas inside the ```schemas``` folder can be used for data validation and are available at https://github.com/ambimax/schemas/blob/master/schemas/.
+This repository contains schemas for data validation. All schemas inside the ```schemas``` folder can be used for data validation and are available at https://raw.githubusercontent.com/ambimax/schemas/master/schemas/.
 
 
 ## Adding a schema
@@ -23,7 +23,7 @@ The folder structure should make sense. One convention would be to put them into
 
 Schemas should be immutable. To update a schema, put the updated schema into a new folder.
 
-One exception are schemas on non-master branches. Those are **NOT** and **SHOULD NOT** be expected to be immutable. They can be accessed via https://github.com/ambimax/schemas/blob/[branch-name]/schemas/.
+One exception are schemas on non-master branches. Those are **NOT** and **SHOULD NOT** be expected to be immutable. They can be accessed via https://raw.githubusercontent.com/ambimax/schemas/[branch-name]/schemas/.
 
 
 ## Useful links
