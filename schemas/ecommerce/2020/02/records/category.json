@@ -9,6 +9,10 @@
         "category": {
             "type": "object",
             "properties": {
+                "entity": {
+                    "type": "string",
+                    "enum": ["category"]
+                },
                 "operation": {
                     "type": "string",
                     "enum": [
@@ -17,7 +21,7 @@
                 },
                 "data": { "$ref": "../entities/category.json" }
             },
-            "required": ["id", "operation"]
+            "required": ["entity", "operation"]
         }
     },
     "allOf": [

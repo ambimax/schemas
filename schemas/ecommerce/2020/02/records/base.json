@@ -3,6 +3,9 @@
     "description": "Base type for all records.",
     "type": "object",
     "properties": {
+        "entity": {
+            "type": "string"
+        },
         "id": {
             "type": "string"
         },
@@ -13,5 +16,5 @@
             "type": "object"
         }
     },
-    "required": ["id", "operation"]
+    "required": ["entity", "id", "operation"]
 }
