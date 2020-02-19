@@ -7,6 +7,10 @@
             "description": "The id (sku or stock keeping unit) of the product.",
             "type": "string"
         },
+        "parent": {
+            "description": "The parent id of the product. An empty string denotes no parent.",
+            "type": "string"
+        },
         "name": {
             "description": "The name of the product.",
             "$ref": "../localeValue.json"
