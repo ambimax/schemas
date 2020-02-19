@@ -3,7 +3,7 @@
     "description": "Record type for categories.",
     "allOf": [
         {
-            "$ref": "/base.json"
+            "$ref": "base.json"
         },
         {
             "properties": {
