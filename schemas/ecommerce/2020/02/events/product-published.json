@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "event": {
+            "type": "string",
+            "enum": ["product-published"]
+        },
+        "origin": {
+            "type": ["string", "null"]
+        },
+        "sku": {
+            "type":"string"
+        }
+    },
+    "required": [
+        "event",
+        "origin",
+        "sku"
+    ],
+    "additionalProperties": false
+}

@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "event": {
+            "type": "string",
+            "enum": ["product_model-deleted"]
+        },
+        "origin": {
+            "type": ["string", "null"]
+        },
+        "code": {
+            "type":"string"
+        }
+    },
+    "required": [
+        "event",
+        "origin",
+        "code"
+    ],
+    "additionalProperties": false
+}
