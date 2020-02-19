@@ -5,14 +5,14 @@
         "type": "object",
         "properties": {
             "scope": {
-                "description": "The scope this value applies to. The string \"NONE\" means a fallback value.",
-                "type": "string",
+                "description": "The scope this value applies to.",
+                "type": ["string", "null"],
                 "pattern": "^.+$"
             },
             "locale": {
-                "description": "The locale this value applies to. The string \"NONE\" means a fallback value.",
-                "type": "string",
-                 "pattern": "^.+$"
+                "description": "The locale this value applies to.",
+                "type": ["string", "null"],
+                "pattern": "^.+$"
             },
             "value": {
                 "description": "The value for the locale.",
