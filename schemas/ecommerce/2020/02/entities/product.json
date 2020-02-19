@@ -11,6 +11,14 @@
             "description": "The parent id of the product. An empty string denotes no parent.",
             "type": "string"
         },
+        "family": {
+            "description": "The family code of the product.",
+            "type": "string"
+        },
+        "enabled": {
+            "description": "Determines whether the product is enabled.",
+            "type": "boolean"
+        },
         "name": {
             "description": "The name of the product.",
             "$ref": "../localeValue.json"
@@ -55,6 +63,9 @@
     },
     "required": [
         "id",
+        "parent",
+        "family",
+        "enabled",
         "name",
         "categories",
         "attributes",
