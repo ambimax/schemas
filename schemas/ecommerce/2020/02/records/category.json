@@ -16,5 +16,8 @@
         },
         "data": { "$ref": "../entities/category.json" }
     },
+    "required": [
+        "entity", "id", "operation", "data"
+    ],
     "additionalProperties": false
 }
