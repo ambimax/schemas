@@ -1,0 +1,29 @@
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "locale": {
+                "description": "The locale this value applies to. An empty string means a fallback value.",
+                "type": "string"
+            },
+            "value": {
+                "description": "The value for the locale.",
+                "type": [
+                    "array",
+                    "boolean",
+                    "integer",
+                    "null",
+                    "number",
+                    "object",
+                    "string"
+                ]
+            }
+        },
+        "additionalProperties": false,
+        "required": [
+            "locale",
+            "value"
+        ]
+    }
+}

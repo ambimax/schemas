@@ -1,0 +1,60 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "product",
+    "description": "An entity for a product.",
+    "properties": {
+        "id": {
+            "description": "The id (sku or stock keeping unit) of the product.",
+            "type": "string"
+        },
+        "name": {
+            "description": "The name of the product.",
+            "$ref": "../localeValue.json"
+        },
+        "categories": {
+            "description": "The categories the product is a part of.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "attributes": {
+            "description": "All attriubte values for the product.",
+            "type": "object",
+            "patternProperties": {
+                "^.$": {
+                    "$ref": "../localeValue.json"
+                }
+            }
+        },
+        "metadata": {
+            "description": "Contains metadata for the product.",
+            "type": "object",
+            "properties": {
+                "createdAt": {
+                    "description": "When the product was first created.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "updatedAt": {
+                    "description": "When the product was last updated.",
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "additionalProperties": false,
+            "required": [
+                "createdAt",
+                "updatedAt"
+            ]
+        }
+    },
+    "required": [
+        "id",
+        "name",
+        "categories",
+        "attributes",
+        "metadata"
+    ],
+    "additionalProperties": false
+}
