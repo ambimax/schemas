@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "description": "Base type for all records.",
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "operation": {
+            "type": "string"
+        },
+        "data": {
+            "type": "object"
+        }
+    },
+    "required": ["id", "operation"]
+}

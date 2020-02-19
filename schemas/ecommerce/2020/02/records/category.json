@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "description": "Record type for categories.",
+    "allOf": [
+        {
+            "$ref": "/.base.json"
+        },
+        {
+            "properties": {
+                "operation": {
+                    "type": "string",
+                    "enum": [
+                        "save", "delete"
+                    ]
+                },
+                "data": { "$ref": "../entities/category.json" }
+            },
+            "required": ["id", "operation"]
+        }
+    ]
+}
