@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "description": "Record type for products.",
+    "type": "object",
+    "properties": {
+        "entity": {
+            "type": "string",
+            "enum": ["product"]
+        },
+        "id": {
+            "type": "string"
+        },
+        "operation": {
+            "type": "string",
+            "enum": ["save", "delete", "publish", "unpublish"]
+        },
+        "data": { "$ref": "../entities/product.json" }
+    },
+    "required": [
+        "entity", "id", "operation", "data"
+    ],
+    "additionalProperties": false
+}
