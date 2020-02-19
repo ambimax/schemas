@@ -5,7 +5,8 @@
         "properties": {
             "locale": {
                 "description": "The locale this value applies to. The string \"NONE\" means a fallback value.",
-                "type": "string"
+                "type": "string",
+                "pattern": "^.+$"
             },
             "value": {
                 "description": "The value for the locale.",

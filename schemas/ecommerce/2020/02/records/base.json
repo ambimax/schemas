@@ -4,13 +4,16 @@
     "type": "object",
     "properties": {
         "entity": {
-            "type": "string"
+            "type": "string",
+            "pattern": "^.+$"
         },
         "id": {
-            "type": "string"
+            "type": "string",
+            "pattern": "^.+$"
         },
         "operation": {
-            "type": "string"
+            "type": "string",
+            "pattern": "^.+$"
         },
         "data": {
             "type": ["object", "null"]

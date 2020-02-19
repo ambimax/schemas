@@ -7,10 +7,12 @@
             "enum": ["category-saved"]
         },
         "origin": {
-            "type": ["string", "null"]
+            "type": ["string", "null"],
+            "pattern": "^.+$"
         },
         "code": {
-            "type":"string"
+            "type":"string",
+            "pattern": "^.+$"
         }
     },
     "required": [

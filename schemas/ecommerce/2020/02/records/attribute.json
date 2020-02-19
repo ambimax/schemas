@@ -39,13 +39,15 @@
                         "type": "object",
                         "properties": {
                             "id": {
-                                "type": "string"
+                                "type": "string",
+                                "pattern": "^.+$"
                             },
                             "sortOrder": {
                                 "type": "number"
                             },
                             "label": {
-                                "type": "string"
+                                "type": "string",
+                                "pattern": "^.+$"
                             }
                         }
                     },

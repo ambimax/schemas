@@ -8,7 +8,8 @@
             "enum": ["category"]
         },
         "id": {
-            "type": "string"
+            "type": "string",
+            "pattern": "^.+$"
         },
         "operation": {
             "type": "string",

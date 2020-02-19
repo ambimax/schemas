@@ -7,10 +7,12 @@
             "enum": ["product-published"]
         },
         "origin": {
-            "type": ["string", "null"]
+            "type": ["string", "null"],
+            "pattern": "^.+$"
         },
         "sku": {
-            "type":"string"
+            "type":"string",
+            "pattern": "^.+$"
         }
     },
     "required": [
