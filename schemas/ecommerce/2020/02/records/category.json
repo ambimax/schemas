@@ -2,34 +2,19 @@
     "$schema": "http://json-schema.org/draft-07/schema",
     "description": "Record type for categories.",
     "type": "object",
-    "definitions": {
-        "base": {
-            "$ref": "base.json"
+    "properties": {
+        "entity": {
+            "type": "string",
+            "enum": ["category"]
         },
-        "category": {
-            "type": "object",
-            "properties": {
-                "entity": {
-                    "type": "string",
-                    "enum": ["category"]
-                },
-                "operation": {
-                    "type": "string",
-                    "enum": [
-                        "save", "delete"
-                    ]
-                },
-                "data": { "$ref": "../entities/category.json" }
-            },
-            "required": ["entity", "operation"]
-        }
+        "id": {
+            "type": "string"
+        },
+        "operation": {
+            "type": "string",
+            "enum": ["save", "delete"]
+        },
+        "data": { "$ref": "../entities/category.json" }
     },
-    "allOf": [
-        {
-            "$ref": "#/definitions/base"
-        },
-        {
-            "$ref": "#/definitions/category"
-        }
-    ]
+    "additionalProperties": false
 }
