@@ -10,7 +10,7 @@
             "pattern": "^\\w+$"
         },
         "parent": {
-            "description": "The parent id of the category. An empty string denotes no parent.",
+            "description": "The parent id of the category. The string \"NONE\" denotes no parent.",
             "type": "string"
         },
         "name": {

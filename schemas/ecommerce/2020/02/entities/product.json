@@ -8,7 +8,7 @@
             "type": "string"
         },
         "parent": {
-            "description": "The parent id of the product. An empty string denotes no parent.",
+            "description": "The parent id of the product. The string \"NONE\" denotes no parent.",
             "type": "string"
         },
         "family": {

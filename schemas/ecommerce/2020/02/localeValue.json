@@ -4,7 +4,7 @@
         "type": "object",
         "properties": {
             "locale": {
-                "description": "The locale this value applies to. An empty string means a fallback value.",
+                "description": "The locale this value applies to. The string \"NONE\" means a fallback value.",
                 "type": "string"
             },
             "value": {
