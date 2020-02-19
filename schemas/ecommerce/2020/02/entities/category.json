@@ -19,7 +19,7 @@
         }
     },
     "required": [
-        "entity", "id", "operation", "locale", "label", "parent"
+        "id", "parent", "name"
     ],
     "additionalProperties": false
 }
