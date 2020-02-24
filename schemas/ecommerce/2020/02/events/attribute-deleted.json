@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "event": {
+            "type": "string",
+            "enum": ["attribute-deleted"]
+        },
+        "origin": {
+            "type": ["string", "null"],
+            "pattern": "^.+$"
+        },
+        "code": {
+            "type":"string",
+            "pattern": "^.+$"
+        }
+    },
+    "required": [
+        "event",
+        "origin",
+        "code"
+    ],
+    "additionalProperties": false
+}
