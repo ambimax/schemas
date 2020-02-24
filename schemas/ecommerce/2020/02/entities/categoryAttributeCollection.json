@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "title": "categoryAttributeCollection",
+    "description": "An entity for a categoryAttributeCollection.",
+    "type": "object",
+    "properties": {
+        "category": {
+            "description": "The category.",
+            "$ref": "./category.json"
+        },
+        "attributes":{
+            "description": "The attributes of the category.",
+            "type":"array",
+            "items": {
+                "$ref": "./attribute.json"
+            }
+        }
+    },
+    "required": [
+        "category", "attributes"
+    ],
+    "additionalProperties": false
+}

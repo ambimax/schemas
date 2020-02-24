@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "description": "Record type for categoryAttributeCollection.",
+    "type": "object",
+    "properties": {
+        "entity": {
+            "type": "string",
+            "enum": ["categoryAttributeCollection"]
+        },
+        "id": {
+            "type": "string",
+            "pattern": "^.+$"
+        },
+        "data": { "$ref": "../entities/categoryAttributeCollection.json" }
+    },
+    "required": [
+        "entity", "id", "data"
+    ],
+    "additionalProperties": false
+}
