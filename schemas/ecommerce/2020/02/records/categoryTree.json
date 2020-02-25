@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "description": "Record type for category tree.",
+    "type": "object",
+    "properties": {
+        "entity": {
+            "type": "string",
+            "enum": ["categoryTree"]
+        },
+        "data": { "$ref": "../entities/categoryTree.json" }
+    },
+    "required": [
+        "entity", "data"
+    ],
+    "additionalProperties": false
+}
