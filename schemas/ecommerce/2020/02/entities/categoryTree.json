@@ -2,27 +2,21 @@
     "$schema": "http://json-schema.org/draft-07/schema",
     "title": "categoryTree",
     "description": "An entity for a category tree.",
-    "definitions": {
-        "node": {
-            "type": "object",
-            "properties": {
-                "category": {
-                    "$ref": "./category.json"
-                },
-                "children": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/node"
-                    }
-                }
-            },
-            "required": [
-                "category",
-                "children"
-            ],
-            "additionalProperties": false
+    "type": "object",
+    "properties": {
+        "category": {
+            "$ref": "./category.json"
+        },
+        "children": {
+            "type": "array",
+            "items": {
+                "$ref": "./categoryTree.json"
+            }
         }
     },
-    "$ref": "#/definitions/node",
+    "required": [
+        "category",
+        "children"
+    ],
     "additionalProperties": false
 }
