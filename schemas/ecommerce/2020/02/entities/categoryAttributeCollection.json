@@ -14,10 +14,14 @@
             "items": {
                 "$ref": "./attribute.json"
             }
+        },
+        "path": {
+            "description": "The aboslute path of the category.",
+            "type": "string"
         }
     },
     "required": [
-        "category", "attributes"
+        "category", "attributes", "path"
     ],
     "additionalProperties": false
 }
