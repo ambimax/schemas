@@ -13,13 +13,17 @@
             "description": "The parent id of the category.",
             "type": ["string", "null"]
         },
+        "count": {
+            "description": "The number of products in this category.",
+            "type": ["number"]
+        },
         "name": {
             "description": "The name of the category.",
             "$ref": "../localeValue.json"
         }
     },
     "required": [
-        "id", "parent", "name"
+        "id", "parent", "count", "name"
     ],
     "additionalProperties": false
 }
