@@ -31,7 +31,7 @@
         }
     },
     "required": [
-        "id", "parent", "count", "name"
+        "id", "parent", "count", "name", "left", "right"
     ],
     "additionalProperties": false
 }
