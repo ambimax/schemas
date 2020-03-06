@@ -13,7 +13,8 @@
         "code": {
             "type":"string",
             "pattern": "^.+$"
-        }
+        },
+        "data": { "$ref": "../entities/category.json" }
     },
     "required": [
         "event",

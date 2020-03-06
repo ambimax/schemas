@@ -13,7 +13,8 @@
         "sku": {
             "type":"string",
             "pattern": "^.+$"
-        }
+        },
+        "data": { "$ref": "../entities/product.json" }
     },
     "required": [
         "event",
