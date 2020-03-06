@@ -15,7 +15,7 @@
         },
         "count": {
             "description": "The number of products in this category.",
-            "type": ["number"]
+            "type": "number"
         },
         "name": {
             "description": "The name of the category.",
@@ -23,11 +23,11 @@
         },
         "left": {
             "description": "Position in Category Tree.",
-            "type": ["number"]
+            "type": "number"
         },
         "right": {
             "description": "Used by Akeneo for Building the Category Tree faster.",
-            "type": ["number"]
+            "type": "number"
         }
     },
     "required": [
