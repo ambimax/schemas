@@ -20,6 +20,14 @@
         "name": {
             "description": "The name of the category.",
             "$ref": "../localeValue.json"
+        },
+        "left": {
+            "description": "Position in Category Tree.",
+            "type": ["number"]
+        },
+        "right": {
+            "description": "Used by Akeneo for Building the Category Tree faster.",
+            "type": ["number"]
         }
     },
     "required": [
