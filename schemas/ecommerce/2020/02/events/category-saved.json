@@ -11,10 +11,68 @@
             "pattern": "^.+$"
         },
         "code": {
-            "type":"string",
+            "type": "string",
             "pattern": "^.+$"
         },
-        "data": { "$ref": "../entities/category.json" }
+        "data": {
+            "type": "object",
+            "properties": {
+                "code": {
+                    "type": "string",
+                    "pattern": "^.+$"
+                },
+                "parent": {
+                    "description": "The parent id of the category.",
+                    "type": ["string", "null"]
+                },
+                "labels": {
+                    "type": "object",
+                    "properties": {
+                        "de_CH": {
+                            "description": "Label for language 'de_CH'.",
+                            "type": ["string", "null"]
+                        },
+                        "en_US": {
+                            "description": "Label for language 'en_US'.",
+                            "type": ["string", "null"]
+                        },
+                        "fr_CH": {
+                            "description": "Label for language 'fr_CH'.",
+                            "type": ["string", "null"]
+                        },
+                        "it_CH": {
+                            "description": "Label for language 'it_CH'.",
+                            "type": ["string", "null"]
+                        }
+                    },
+                    "required": [
+                        "en_US"
+                    ],
+                    "additionalProperties": true
+                },
+                "count": {
+                    "description": "The number of products in this category.",
+                    "type": "number"
+                },
+                "left": {
+                    "description": "Position in Category Tree.",
+                    "type": "number"
+                },
+                "right": {
+                    "description": "Used by Akeneo for Building the Category Tree faster.",
+                    "type": "number"
+                }
+            },
+            "required": [
+                "code",
+                "parent",
+                "labels",
+                "count",
+                "left",
+                "right"
+            ],
+            "additionalProperties": false
+        }
     },
     "required": [
         "event",
