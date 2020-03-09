@@ -14,7 +14,9 @@
             "type":"string",
             "pattern": "^.+$"
         },
-        "data": { "$ref": "../entities/product.json" }
+        "data": {
+            "type": "object"
+        }
     },
     "required": [
         "event",

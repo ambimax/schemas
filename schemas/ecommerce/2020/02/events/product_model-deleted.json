@@ -13,8 +13,7 @@
         "code": {
             "type":"string",
             "pattern": "^.+$"
-        },
-        
+        }
     },
     "required": [
         "event",

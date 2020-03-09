@@ -4,10 +4,15 @@
     "properties": {
         "event": {
             "type": "string",
-            "enum": ["category-saved"]
+            "enum": [
+                "category-saved"
+            ]
         },
         "origin": {
-            "type": ["string", "null"],
+            "type": [
+                "string",
+                "null"
+            ],
             "pattern": "^.+$"
         },
         "code": {
@@ -23,32 +28,23 @@
                 },
                 "parent": {
                     "description": "The parent id of the category.",
-                    "type": ["string", "null"]
+                    "type": [
+                        "string",
+                        "null"
+                    ]
                 },
                 "labels": {
                     "type": "object",
-                    "properties": {
-                        "de_CH": {
-                            "description": "Label for language 'de_CH'.",
-                            "type": ["string", "null"]
-                        },
-                        "en_US": {
-                            "description": "Label for language 'en_US'.",
-                            "type": ["string", "null"]
-                        },
-                        "fr_CH": {
-                            "description": "Label for language 'fr_CH'.",
-                            "type": ["string", "null"]
-                        },
-                        "it_CH": {
-                            "description": "Label for language 'it_CH'.",
-                            "type": ["string", "null"]
+                    "patternProperties": {
+                        "^.+$": {
+                            "description": "Label for language.",
+                            "type": [
+                                "string",
+                                "null"
+                            ]
                         }
                     },
-                    "required": [
-                        "en_US"
-                    ],
-                    "additionalProperties": true
+                    "additionalProperties": false
                 },
                 "count": {
                     "description": "The number of products in this category.",
