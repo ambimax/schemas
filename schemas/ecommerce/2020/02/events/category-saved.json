@@ -73,7 +73,8 @@
     "required": [
         "event",
         "origin",
-        "code"
+        "code",
+        "data"
     ],
     "additionalProperties": false
 }
