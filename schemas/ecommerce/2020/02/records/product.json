@@ -18,7 +18,7 @@
         "data": { "$ref": "../entities/product.json" }
     },
     "required": [
-        "entity", "id", "operation", "data"
+        "entity", "id", "operation"
     ],
     "additionalProperties": false
 }
