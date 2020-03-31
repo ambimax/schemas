@@ -29,7 +29,7 @@
                     "pattern": "^.+$"
                 },
                 "labels": {
-                    "type": "object",
+                    "type": ["object", "null"],
                     "patternProperties": {
                         "^.+$": {
                             "description": "Label for language.",
