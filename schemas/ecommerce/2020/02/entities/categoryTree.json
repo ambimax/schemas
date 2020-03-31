@@ -8,9 +8,9 @@
             "type": "string",
             "pattern": "^.+$"
         },
-        "name": {
+        "labels": {
             "description": "The name of the category.",
-            "$ref": "../localeValue.json"
+            "$ref": "../akeneoLocaleValue.json"
         },
         "level": {
             "description": "The level in which this category is.",
@@ -45,7 +45,7 @@
     },
     "required": [
         "code",
-        "name",
+        "labels",
         "level",
         "left",
         "right"

@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "^[a-z]{2}_[A-Z]{2}$": {
+            "description": "The value for the locale.",
+            "type":
+                "string"
+        }
+    },
+    "additionalProperties": false
+}
