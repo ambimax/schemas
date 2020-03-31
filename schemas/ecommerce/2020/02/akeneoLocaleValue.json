@@ -3,9 +3,11 @@
     "type": "object",
     "patternProperties": {
         "^.+$": {
-            "description": "The value for the locale.",
-            "type":
-                "string"
+            "description": "Label for language.",
+            "type": [
+                "string",
+                "null"
+            ]
         }
     },
     "additionalProperties": false
