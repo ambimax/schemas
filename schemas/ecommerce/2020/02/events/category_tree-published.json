@@ -29,17 +29,8 @@
                     "pattern": "^.+$"
                 },
                 "labels": {
-                    "type": ["object", "null"],
-                    "patternProperties": {
-                        "^.+$": {
-                            "description": "Label for language.",
-                            "type": [
-                                "string",
-                                "null"
-                            ]
-                        }
-                    },
-                    "additionalProperties": false
+                    "description": "The name of the category.",
+                    "$ref": "../akeneoLocaleValue.json"
                 },
                 "level": {
                     "description": "The level in which this category is.",
