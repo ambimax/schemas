@@ -13,7 +13,7 @@
         },
         "operation": {
             "type": "string",
-            "enum": ["save", "delete"]
+            "enum": ["publish"]
         },
         "data": { "$ref": "../entities/categoryTree.json" }
     },
