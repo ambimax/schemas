@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "type": ["object", "null"],
+    "type": ["object", "array"],
     "patternProperties": {
         "^.+$": {
             "description": "Label for language.",
@@ -9,6 +9,10 @@
                 "null"
             ]
         }
+    },
+    "items": {
+        "minItems": 0,
+        "maxItems": 0
     },
     "additionalProperties": false
 }
