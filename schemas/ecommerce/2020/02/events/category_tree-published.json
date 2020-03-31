@@ -28,11 +28,11 @@
                     "type": "string",
                     "pattern": "^.+$"
                 },
-                "labels": {
+                "name": {
                     "description": "The name of the category.",
-                    "$ref": "../akeneoLocaleValue.json"
+                    "$ref": "../localeValue.json"
                 },
-                "level": {
+                        "level": {
                     "description": "The level in which this category is.",
                     "type": "number"
                 },

@@ -8,9 +8,9 @@
             "type": "string",
             "pattern": "^.+$"
         },
-        "labels": {
+        "name": {
             "description": "The name of the category.",
-            "$ref": "../akeneoLocaleValue.json"
+            "$ref": "../localeValue.json"
         },
         "level": {
             "description": "The level in which this category is.",
@@ -25,22 +25,30 @@
             "type": "number"
         },
         "created": {
-            "description": "TODO: what does this property stand for.",
+            "description": "To determine exactly when the category was created at",
             "type": "object",
             "properties": {
-                "cratedAt": {
-                    "description": "Crated at, I think",
-                    "type": "string"
+                "date": {
+                    "description": "Date with time when the category was created at",
+                    "type": "string",
+                    "pattern": "^.+$"
                 },
-                "additionalProperties": true
+                "timezone": {
+                    "description": "Timezone for written :date",
+                    "type": "string",
+                    "examples": ["UTC"]
+                },
+                "timezone_type": {
+                    "description": "Type of :timezone for written :date",
+                    "type": "number"
+                }
             }
         },
         "children": {
             "type": "array",
             "items": {
                 "$ref": "./categoryTree.json"
-            },
-            "description": "TODO: what does this property stand for."
+            }
         }
     },
     "required": [
