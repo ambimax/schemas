@@ -4,19 +4,60 @@
     "description": "An entity for a category tree.",
     "type": "object",
     "properties": {
-        "category": {
-            "$ref": "./category.json"
+        "code": {
+            "type": "string",
+            "pattern": "^.+$"
+        },
+        "labels": {
+            "type": "object",
+            "patternProperties": {
+                "^.+$": {
+                    "description": "Label for language.",
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                }
+            },
+            "additionalProperties": false
+        },
+        "level": {
+            "description": "The level in which this category is.",
+            "type": "number"
+        },
+        "left": {
+            "description": "Position in Category Tree.",
+            "type": "number"
+        },
+        "right": {
+            "description": "Used by Akeneo for Building the Category Tree faster.",
+            "type": "number"
+        },
+        "created": {
+            "description": "TODO: what does this property stand for.",
+            "type": "object",
+            "properties": {
+                "cratedAt": {
+                    "description": "Crated at, I think",
+                    "type": "string"
+                },
+                "additionalProperties": true
+            }
         },
         "children": {
             "type": "array",
             "items": {
                 "$ref": "./categoryTree.json"
-            }
+            },
+            "description": "TODO: what does this property stand for."
         }
     },
     "required": [
-        "category",
-        "children"
+        "code",
+        "labels",
+        "level",
+        "left",
+        "right"
     ],
-    "additionalProperties": false
+    "additionalProperties": true
 }
