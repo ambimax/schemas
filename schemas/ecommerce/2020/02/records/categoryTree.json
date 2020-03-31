@@ -7,10 +7,18 @@
             "type": "string",
             "enum": ["categoryTree"]
         },
+        "root": {
+            "type": "string",
+            "pattern": "^.+$"
+        },
+        "operation": {
+            "type": "string",
+            "enum": ["save", "delete"]
+        },
         "data": { "$ref": "../entities/categoryTree.json" }
     },
     "required": [
-        "entity", "data"
+        "entity", "root", "operation", "data"
     ],
     "additionalProperties": false
 }
