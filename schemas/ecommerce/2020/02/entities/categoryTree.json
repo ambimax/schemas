@@ -53,7 +53,7 @@
     },
     "required": [
         "code",
-        "labels",
+        "name",
         "level",
         "left",
         "right"

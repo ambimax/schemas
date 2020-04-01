@@ -32,7 +32,7 @@
                     "description": "The name of the category.",
                     "$ref": "../localeValue.json"
                 },
-                        "level": {
+                "level": {
                     "description": "The level in which this category is.",
                     "type": "number"
                 },
@@ -45,24 +45,35 @@
                     "type": "number"
                 },
                 "created": {
-                    "description": "TODO: what does this property stand for.",
+                    "description": "To determine exactly when the category was created at",
                     "type": "object",
                     "properties": {
-                        "cratedAt": {
-                            "description": "Crated at, I think",
-                            "type": "string"
+                        "date": {
+                            "description": "Date with time when the category was created at",
+                            "type": "string",
+                            "pattern": "^.+$"
                         },
-                        "additionalProperties": true
+                        "timezone": {
+                            "description": "Timezone for written :date",
+                            "type": "string",
+                            "examples": ["UTC"]
+                        },
+                        "timezone_type": {
+                            "description": "Type of :timezone for written :date",
+                            "type": "number"
+                        }
                     }
                 },
                 "children": {
-                    "description": "TODO: what does this property stand for.",
-                    "type": "array"
+                    "type": "array",
+                    "items": {
+                        "$ref": "./categoryTree.json"
+                    }
                 }
             },
             "required": [
                 "code",
-                "labels",
+                "name",
                 "level",
                 "left",
                 "right"
