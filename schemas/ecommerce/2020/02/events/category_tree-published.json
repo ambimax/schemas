@@ -67,7 +67,7 @@
                 "children": {
                     "type": "array",
                     "items": {
-                        "$ref": "./categoryTree.json"
+                        "$ref": "../entities/categoryTree.json"
                     }
                 }
             },
